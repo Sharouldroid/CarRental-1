@@ -1,9 +1,3 @@
-<%-- 
-    Document   : payment
-    Created on : May 27, 2025, 12:58:51 AM
-    Author     : wmalf
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="javax.servlet.http.*, model.User" %>
 <%
@@ -41,7 +35,7 @@
                     <option value="Online Transfer">Online Transfer</option>
                     <option value="Credit Card">Credit Card</option>
                     <option value="PayPal">PayPal</option>
-                    <option value="Cash">Cash</option> <!-- ✅ New option added -->
+                    <option value="Cash">Cash</option> 
                 </select>
             </div>
             <button type="submit" class="btn btn-success">Confirm</button>

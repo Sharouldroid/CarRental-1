@@ -1,9 +1,3 @@
-<%-- 
-    Document   : editProfile
-    Created on : May 27, 2025, 11:19:35 AM
-    Author     : wmalf
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="model.User" %>
 <%
@@ -39,7 +33,7 @@
                 </div>
             <% } %>
 
-                <form action="UpdateProfileServlet" method="post">
+                <form action="UpdateProfileServlet" method="post" style="display:inline;" onsubmit="return confirm('Are you sure you want to edit your profile details?');">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
                         <input type="text" name="username" id="username" value="<%= user.getUsername() %>" class="form-control" required>
@@ -72,7 +66,6 @@
                     <button type="submit" class="btn btn-primary">Update</button>
                     <a href="profile.jsp" class="btn btn-secondary ms-2">Cancel</a>
                 </form>
-            </div>
         </div>
     </div>
 </main>
